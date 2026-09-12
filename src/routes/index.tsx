@@ -32,7 +32,7 @@ const TRUST_POINTS = [
   {
     icon: Clock3,
     title: 'Acompanhamento lado a lado',
-    text: 'Programas de acompanhamento onde eu caminho lado a lado com você, com sessões semanais ou quinzenais para que você fique engajada durante todo o processo.',
+    text: 'Sessões semanais ou quinzenais, caminhando ao seu lado em cada etapa do processo.',
   },
   {
     icon: Globe2,
