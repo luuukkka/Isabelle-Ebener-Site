@@ -31,8 +31,8 @@ const EMAIL = 'ebenerisa1@gmail.com'
 const TRUST_POINTS = [
   {
     icon: Clock3,
-    title: 'Resposta no mesmo dia',
-    text: 'Mensagens no WhatsApp e Instagram respondidas ainda no mesmo dia.',
+    title: 'Acompanhamento lado a lado',
+    text: 'Programas de acompanhamento onde eu caminho lado a lado com você, com sessões semanais ou quinzenais para que você fique engajada durante todo o processo.',
   },
   {
     icon: Globe2,
