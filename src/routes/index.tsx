@@ -32,17 +32,17 @@ const TRUST_POINTS = [
   {
     icon: Clock3,
     title: 'Acompanhamento lado a lado',
-    text: 'Sessões semanais ou quinzenais, caminhando ao seu lado em cada etapa do processo.',
+    text: 'Programas de acompanhamento onde eu caminho lado a lado, com sessões semanais ou quinzenais para que você continue engajada durante todo o processo.',
   },
   {
     icon: Globe2,
     title: 'Brasil e Europa',
-    text: 'Atendimento 100% online, com horários pensados para os dois fusos.',
+    text: 'Atendimento 100% online, com flexibilidade de horários e pensados para os dois fusos.',
   },
   {
     icon: HeartHandshake,
     title: 'Escuta sem julgamento',
-    text: 'Um espaço acolhedor, gentil e livre de culpa para falar sobre comida.',
+    text: 'Um espaço acolhedor, gentil e livre de culpa para falar sobre a sua relação com você, com seu corpo e com comida.',
   },
 ]
 
@@ -238,11 +238,11 @@ function LandingPage() {
         <div className="relative mx-auto max-w-4xl text-center">
           <SectionEyebrow>Nutrição Comportamental · Online · Brasil &amp; Europa</SectionEyebrow>
           <h1 className="mt-5 font-display text-3xl leading-tight text-[#4c311c] sm:text-5xl sm:leading-tight">
-            Comer bem sem dieta, sem culpa e sem restrição.
+            Por uma relação mais gentil: com você, com seu corpo e com a comida.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#4c311c]/85">
-            Um acompanhamento nutricional que une ciência, comportamento e afeto — para você
-            construir hábitos que realmente cabem na sua vida.
+            Um acompanhamento nutricional que une afeto, memórias e comportamento — sem dietas,
+            sem restrições e longe de contagem de calorias.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <CTAButton href={waLink('Olá, Isabelle! Gostaria de marcar uma consulta.')}>
@@ -289,9 +289,11 @@ function LandingPage() {
               Isabelle Ebener
             </h2>
             <p className="mt-4 leading-relaxed text-[#4c311c]/85">
-              Sou nutricionista comportamental e acredito que mudança de hábito de verdade não
-              nasce de mais uma dieta — nasce de autoconhecimento, ciência e paciência com o
-              próprio processo. Meu trabalho é conduzir esse caminho junto com você.
+              Sou nutricionista comportamental e acredito que mudança de hábito de verdade e a
+              construção de um estilo de vida mais saudável não nasce de mais uma dieta (eu não
+              sigo dieta rs), ela nasce do autoconhecimento, da paciência com o próprio processo e
+              do entendimento de que não há uma rotina 100% perfeita. Meu trabalho é conduzir esse
+              caminho junto com você, e te mostrar que o comer vai muito além do prato.
             </p>
             <ul className="mt-6 space-y-2.5 text-sm text-[#4c311c]/80">
               <li className="flex items-start gap-2">
@@ -308,11 +310,7 @@ function LandingPage() {
               </li>
               <li className="flex items-start gap-2">
                 <ShieldCheck className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#913c1f]" aria-hidden="true" />
-                Especializanda em Terapia Nutricional na Alemanha
-              </li>
-              <li className="flex items-start gap-2">
-                <ShieldCheck className="mt-0.5 h-4 w-4 flex-shrink-0 text-[#913c1f]" aria-hidden="true" />
-                Atendimentos online para Brasil e Europa
+                Especializanda como Terapeuta Nutricional na Alemanha
               </li>
             </ul>
             <div className="mt-7">
@@ -478,7 +476,7 @@ function LandingPage() {
                   <h3 className="font-display text-lg text-[#4c311c]">{service.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-[#4c311c]/80">{service.text}</p>
                   <div className="mt-5">
-                    <a
+                    
                       href={waLink(`Olá, Isabelle! Quero saber mais sobre o ${service.title}.`)}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -583,7 +581,7 @@ function LandingPage() {
               Falar no WhatsApp
             </CTAButton>
 
-            <a
+            
               href={`mailto:${EMAIL}`}
               className="inline-flex items-center gap-2 text-sm text-[#4c311c]/80 hover:text-[#4c311c]"
             >
@@ -593,7 +591,7 @@ function LandingPage() {
           </div>
 
           <div className="mt-8 flex items-center justify-center gap-5">
-            <a
+            
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -602,7 +600,7 @@ function LandingPage() {
             >
               <Instagram className="h-6 w-6" aria-hidden="true" />
             </a>
-            <a
+            
               href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -611,7 +609,7 @@ function LandingPage() {
             >
               <Linkedin className="h-6 w-6" aria-hidden="true" />
             </a>
-            <a
+            
               href={SUBSTACK_URL}
               target="_blank"
               rel="noopener noreferrer"
