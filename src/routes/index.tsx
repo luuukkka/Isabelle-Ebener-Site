@@ -32,7 +32,7 @@ const TRUST_POINTS = [
   {
     icon: Clock3,
     title: 'Acompanhamento lado a lado',
-    text: 'Sessões semanais ou quinzenais, caminhando ao seu lado em cada etapa do processo.',
+    text: 'Programas de acompanhamento onde eu caminho lado a lado, com sessões semanais ou quinzenais para que você continue engajada durante todo o processo.',
   },
   {
     icon: Globe2,
@@ -476,7 +476,7 @@ function LandingPage() {
                   <h3 className="font-display text-lg text-[#4c311c]">{service.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-[#4c311c]/80">{service.text}</p>
                   <div className="mt-5">
-                    
+                    <a
                       href={waLink(`Olá, Isabelle! Quero saber mais sobre o ${service.title}.`)}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -581,7 +581,7 @@ function LandingPage() {
               Falar no WhatsApp
             </CTAButton>
 
-            
+            <a
               href={`mailto:${EMAIL}`}
               className="inline-flex items-center gap-2 text-sm text-[#4c311c]/80 hover:text-[#4c311c]"
             >
@@ -591,7 +591,7 @@ function LandingPage() {
           </div>
 
           <div className="mt-8 flex items-center justify-center gap-5">
-            
+            <a
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -600,7 +600,7 @@ function LandingPage() {
             >
               <Instagram className="h-6 w-6" aria-hidden="true" />
             </a>
-            
+            <a
               href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -609,7 +609,7 @@ function LandingPage() {
             >
               <Linkedin className="h-6 w-6" aria-hidden="true" />
             </a>
-            
+            <a
               href={SUBSTACK_URL}
               target="_blank"
               rel="noopener noreferrer"
