@@ -396,16 +396,16 @@ function LandingPage() {
           <div className="mt-10 grid gap-6 sm:grid-cols-3">
             {TESTIMONIALS.map((t) => (
               <figure
-              key={t.quote}
-              className="rounded-2xl border border-[#4c311c]/12 bg-[#eae8da] p-6"
-            >
-              <blockquote className="text-sm leading-relaxed text-[#4c311c]/85">
-                &ldquo;{t.quote}&rdquo;
-              </blockquote>
-              <figcaption className="mt-4 text-xs uppercase tracking-wide text-[#913c1f]">
-                {t.name}
-              </figcaption>
-            </figure>
+                key={t.quote}
+                className="rounded-2xl border border-[#4c311c]/12 bg-[#eae8da] p-6" >
+                    <Quote className="h-5 w-5 text-[#913c1f]/50" aria-hidden="true" />
+                      <blockquote className="mt-2.5 text-sm leading-relaxed text-[#4c311c]/85">
+                        &ldquo;{t.quote}&rdquo;
+                      </blockquote>
+                    <figcaption className="mt-4 text-xs uppercase tracking-wide text-[#913c1f]">
+                  {t.name}
+                </figcaption>
+              </figure>
             ))}
           </div>
         </div>
