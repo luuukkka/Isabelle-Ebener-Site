@@ -270,19 +270,23 @@ function LandingPage() {
 
       {/* SOBRE MIM */}
       <section id="sobre" className="px-5 py-20 sm:px-8">
-        <div className="mx-auto grid max-w-5xl gap-10 sm:grid-cols-[minmax(0,280px)_1fr] sm:items-center">
-          <div className="mx-auto w-full max-w-xs">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] border border-[#4c311c]/15 bg-[#e2decb]">
-              <div
-                className="absolute inset-0 opacity-40"
-                style={{ backgroundImage: "url('/images/pattern.svg')", backgroundSize: '220px' }}
-                aria-hidden="true"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="font-script text-6xl text-[#4c311c]/70">IE</span>
-              </div>
-            </div>
+       <div className="mx-auto grid max-w-5xl gap-10 sm:grid-cols-[minmax(0,280px)_1fr] sm:items-center">
+       <div className="mx-auto w-full max-w-xs">
+       <div className="relative aspect-[4/5] w-full">
+          <img
+            src="/images/WhatsApp_Image_2026-09-16_at_05_46_10__2_.jpeg"
+            alt="Isabelle Ebener sorrindo, segurando fatias de toranja"
+            className="absolute inset-0 h-full w-full rounded-[2rem] border border-[#4c311c]/15 object-cover shadow-[0_8px_24px_rgba(76,49,28,0.15)]"
+          />
+          <div className="absolute -bottom-6 -right-6 h-32 w-32 overflow-hidden rounded-2xl border-4 border-[#eae8da] shadow-[0_8px_20px_rgba(76,49,28,0.2)] sm:h-36 sm:w-36">
+            <img
+              src="/images/WhatsApp_Image_2026-09-16_at_05_46_10__3_.jpeg"
+              alt="Isabelle Ebener sorrindo com um limão"
+              className="h-full w-full object-cover"
+            />
           </div>
+        </div>
+      </div>
           <div>
             <SectionEyebrow>Sobre mim</SectionEyebrow>
             <h2 className="mt-3 font-display text-2xl text-[#4c311c] sm:text-3xl">
