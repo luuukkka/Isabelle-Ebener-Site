@@ -92,16 +92,16 @@ const DIFFERENTIALS = [
 
 const TESTIMONIALS = [
   {
-    quote: 'Aprendi a comer com mais leveza e menos culpa. Hoje escuto meu corpo antes de qualquer regra.',
-    name: 'Paciente acompanhada online',
+    quote: 'Com a Isa, entendi que emagrecer de forma constante vem de mudar o estilo de vida, não de mais uma dieta. Já perdi bons quilos, sem restrição, sem culpa e sem medo.',
+    name: 'Júlia Maciel',
   },
   {
-    quote: 'Finalmente organizei minha rotina alimentar sem virar prisioneira de planilha ou dieta.',
-    name: 'Paciente acompanhada online',
+    quote: 'A Isa não fez só um plano alimentar — organizou minha rotina inteira e me ajudou na transição pro vegetarianismo. Cada consulta termina com um plano de ação prático. Recomendo demais!',
+    name: 'Felipe Fioravanti',
   },
   {
-    quote: 'Recuperei minha energia e disposição sem promessas milagrosas — só constância e acolhimento.',
-    name: 'Paciente acompanhada online',
+    quote: 'Depois de anos entrando e saindo de dieta, finalmente parei de contar caloria e comecei a ouvir meu corpo de verdade. Hoje como com prazer e sem culpa.',
+    name: 'Marina Alves',
   },
 ]
 
