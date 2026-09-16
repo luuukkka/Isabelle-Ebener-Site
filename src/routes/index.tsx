@@ -14,6 +14,7 @@ import {
   ShieldCheck,
   MessageSquareHeart,
   Ban,
+  quote,
 } from 'lucide-react'
 import { SiteHeader, waLink } from '@/components/site-header'
 import { FaqAccordion } from '@/components/faq-accordion'
