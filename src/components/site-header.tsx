@@ -12,6 +12,7 @@ const NAV_LINKS = [
   { href: '#abordagem', label: 'Abordagem' },
   { href: '#como-funciona', label: 'Como funciona' },
   { href: '#servicos', label: 'Programas' },
+  { href: '#mentorias', label: 'Mentorias' },
   { href: '#faq', label: 'Perguntas' },
   { href: '#contato', label: 'Contato' },
 ]
@@ -30,7 +31,7 @@ export function SiteHeader() {
           />
         </a>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-5 lg:flex xl:gap-7">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
@@ -71,7 +72,7 @@ export function SiteHeader() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="block text-base text-[#4c311c]/85"
+                  className="block py-2 text-base text-[#4c311c]/85"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}

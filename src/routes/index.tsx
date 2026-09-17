@@ -164,6 +164,42 @@ const SERVICES: Array<{
   },
 ]
 
+const MENTORIA_HIGHLIGHTS = [
+  {
+    icon: Pea,
+    accent: '#351935',
+    title: 'Processo compartilhado',
+    text: 'Você não precisa fazer esse caminho sozinha: a mentoria reúne pessoas em momentos parecidos, com troca respeitosa e presença, sem ranking nem comparação.',
+  },
+  {
+    icon: Beet,
+    accent: '#913c1f',
+    title: 'Comunidade com afeto',
+    text: 'Um grupo pequeno o suficiente para caber a sua história — e grande o suficiente para lembrar que a relação com o corpo e com a comida não precisa ser um segredo.',
+  },
+  {
+    icon: Pumpkin,
+    accent: '#e48e37',
+    title: 'Ferramentas para o dia a dia',
+    text: 'Encontros pensados para a rotina real: sono, estresse, gatilhos, mesa e autocuidado — liberdade para decidir, não mais uma lista de regras.',
+  },
+]
+
+const MENTORIA_GATHERING = [
+  {
+    icon: Users,
+    text: 'Encontros em grupo, online, com escuta gentil e o calor de quem caminha junto.',
+  },
+  {
+    icon: CalendarCheck,
+    text: 'Datas, duração e valores de cada turma combinamos no WhatsApp, com calma.',
+  },
+  {
+    icon: MessageSquareHeart,
+    text: 'Aprendizagem coletiva e ferramentas práticas — não é consulta corrida nem plano clínico só seu.',
+  },
+]
+
 const FAQ_ITEMS = [
   {
     question: 'O atendimento é só online?',
@@ -184,6 +220,11 @@ const FAQ_ITEMS = [
     question: 'Preciso seguir uma dieta restritiva?',
     answer:
       'Não. O trabalho é construído em cima de comportamento alimentar e hábitos sustentáveis — sem contagem de calorias, sem listas de proibidos e sem promessas de resultado rápido.',
+  },
+  {
+    question: 'Mentoria em grupo substitui o acompanhamento individual?',
+    answer:
+      'Não. A mentoria em grupo é um espaço de aprendizagem compartilhada — comunidade, conversa e ferramentas práticas. Os Programas são o acompanhamento 1:1: sessões suas, anamnese, orientações personalizadas e, nos programas contínuos, suporte no WhatsApp. Dá para viver um, o outro, ou os dois, conforme o seu momento. O que faz sentido a gente define juntas no WhatsApp.',
   },
   {
     question: 'Você atende vegetarianos, veganos e esportistas?',
@@ -208,7 +249,13 @@ function CTAButton({
       ? 'bg-[#4c311c] text-[#eae8da] hover:bg-[#3a2515]'
       : 'border border-[#4c311c] text-[#4c311c] hover:bg-[#4c311c]/10'
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className={`${base} ${styles}`}>
+    <a
+      href={href}
+      {...(href.startsWith('http')
+        ? { target: '_blank' as const, rel: 'noopener noreferrer' }
+        : {})}
+      className={`${base} ${styles}`}
+    >
       {children}
     </a>
   )
@@ -503,12 +550,128 @@ function LandingPage() {
               acompanhamento, ferramentas de mudança comportamental, plano de metas de curto, médio
               e longo prazo, suporte via WhatsApp e acesso à comunidade de pacientes.
             </p>
+            <a
+              href="#mentorias"
+              className="mt-3 inline-block text-sm font-medium text-[#913c1f] hover:text-[#4c311c]"
+            >
+              Conheça também as mentorias em grupo
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* MENTORIAS EM GRUPO */}
+      <section id="mentorias" className="bg-[#e2decb] px-5 py-20 sm:px-8">
+        <div className="mx-auto max-w-5xl">
+          <div className="max-w-2xl">
+            <SectionEyebrow>Mentorias em grupo</SectionEyebrow>
+            <h2 className="mt-3 font-display text-2xl text-[#4c311c] sm:text-3xl">
+              Um processo compartilhado, no seu ritmo — sem dieta e sem julgamento.
+            </h2>
+            <p className="mt-4 leading-relaxed text-[#4c311c]/85">
+              Um formato complementar ao acompanhamento individual: aprendizagem coletiva, escuta
+              gentil, ferramentas práticas e o calor de quem caminha junto. Não substitui a consulta
+              1:1 nem o cuidado clínico personalizado.
+            </p>
+          </div>
+
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="flex -space-x-2">
+              <span
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#eae8da]"
+                style={{ backgroundColor: '#ecda5a30' }}
+              >
+                <Mushroom className="h-6 w-6" style={{ color: '#ecda5a' }} />
+              </span>
+              <span
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#eae8da]"
+                style={{ backgroundColor: '#b2c44230' }}
+              >
+                <Pea className="h-6 w-6" style={{ color: '#b2c442' }} />
+              </span>
+              <span
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#eae8da]"
+                style={{ backgroundColor: '#e48e3730' }}
+              >
+                <Carrot className="h-6 w-6" style={{ color: '#e48e37' }} />
+              </span>
+            </div>
+            <p className="text-sm text-[#4c311c]/75">
+              Aprendizagem coletiva, com escuta gentil — detalhes de cada turma no WhatsApp.
+            </p>
+          </div>
+
+          <article className="mt-10 rounded-2xl border border-[#4c311c]/12 bg-[#eae8da] p-6 sm:p-8">
+            <div className="grid gap-8 sm:grid-cols-2 sm:items-start">
+              <div>
+                <h3 className="font-display text-lg text-[#4c311c]">Como a gente se reúne</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#4c311c]/80">
+                  Quem busca dieta, contagem de calorias ou um plano clínico só seu encontra esse
+                  cuidado nos Programas individuais. A mentoria é para quem quer se reconectar com
+                  a comida em companhia — com ou sem acompanhamento 1:1 em paralelo.
+                </p>
+                <p className="mt-4 font-display text-base italic text-[#4c311c]">
+                  &ldquo;Nutrição além do prato, agora em círculo.&rdquo;
+                </p>
+              </div>
+              <ul className="space-y-3">
+                {MENTORIA_GATHERING.map((item) => (
+                  <li key={item.text} className="flex items-start gap-3">
+                    <item.icon
+                      className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#913c1f]"
+                      aria-hidden="true"
+                    />
+                    <span className="text-sm leading-relaxed text-[#4c311c]/85">{item.text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </article>
+
+          <div className="mt-10 grid gap-6 sm:grid-cols-3">
+            {MENTORIA_HIGHLIGHTS.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-2xl border border-[#4c311c]/12 bg-[#eae8da] p-6"
+              >
+                <div
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full"
+                  style={{ backgroundColor: `${item.accent}30` }}
+                >
+                  <item.icon className="h-6 w-6" style={{ color: item.accent }} />
+                </div>
+                <h3 className="mt-4 font-display text-lg text-[#4c311c]">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#4c311c]/80">{item.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-dashed border-[#4c311c]/25 p-6 text-center">
+            <p className="text-sm leading-relaxed text-[#4c311c]/75">
+              Mentoria em grupo não é substituto de consulta. Anamnese, exames, plano personalizado
+              e suporte clínico contínuo seguem nos Programas. Datas, duração e valores combinamos
+              juntas no WhatsApp.
+            </p>
+          </div>
+
+          <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <CTAButton
+              href={waLink(
+                'Olá, Isabelle! Vi no site a seção de Mentorias em grupo e gostaria de saber como funciona a próxima turma — sem compromisso.',
+              )}
+            >
+              <MessageCircle className="h-4 w-4" aria-hidden="true" />
+              Conversar sobre as mentorias
+            </CTAButton>
+            <CTAButton href="#servicos" variant="secondary">
+              Ver os programas individuais
+            </CTAButton>
           </div>
         </div>
       </section>
 
       {/* CONTEÚDO VIVO */}
-      <section className="bg-[#e2decb] px-5 py-20 sm:px-8">
+      <section className="px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
             <SectionEyebrow>Conteúdo vivo</SectionEyebrow>
@@ -551,7 +714,7 @@ function LandingPage() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="px-5 py-20 sm:px-8">
+      <section id="faq" className="bg-[#e2decb] px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-3xl">
           <div className="text-center">
             <SectionEyebrow>Perguntas frequentes</SectionEyebrow>
@@ -566,7 +729,7 @@ function LandingPage() {
       </section>
 
       {/* CONTATO */}
-      <section id="contato" className="bg-[#e2decb] px-5 py-20 sm:px-8">
+      <section id="contato" className="px-5 py-20 sm:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <img
             src="/images/logo-badge.png"
