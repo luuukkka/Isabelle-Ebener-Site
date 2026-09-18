@@ -194,15 +194,11 @@ const MENTORIA_HIGHLIGHTS = [
 const MENTORIA_GATHERING = [
   {
     icon: Users,
-    text: 'Encontros em grupo, online, com escuta gentil e o calor de quem caminha junto.',
+    text: 'Encontros em Grupo: reuniões dinâmicas para troca de experiências, dinâmicas comportamentais, suporte mútuo entre as participantes e palestras sobre educação nutricional.',
   },
   {
-    icon: CalendarCheck,
-    text: 'Datas, duração e valores de cada turma combinamos no WhatsApp, com calma.',
-  },
-  {
-    icon: MessageSquareHeart,
-    text: 'Aprendizagem coletiva e ferramentas práticas — não é consulta corrida nem plano clínico só seu.',
+    icon: ClipboardList,
+    text: 'Consultas Individuais: atendimentos exclusivos e personalizados para ajustar suas metas específicas, rotina e exames.',
   },
 ]
 
@@ -279,48 +275,55 @@ function LandingPage() {
       <SiteHeader />
 
       {/* CAPA */}
-      <section className="relative overflow-hidden px-5 pb-20 pt-14 sm:px-8 sm:pt-20">
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.35]"
-          style={{
-            backgroundImage: "url('/images/pattern.svg')",
-            backgroundSize: '340px',
-            maskImage: 'linear-gradient(to bottom, black, transparent)',
-          }}
-          aria-hidden="true"
-        />
-        <div className="relative mx-auto max-w-4xl text-center">
-          <SectionEyebrow>Nutrição Comportamental · Online · Brasil &amp; Europa</SectionEyebrow>
-          <h1 className="mt-5 font-display text-3xl leading-tight text-[#4c311c] sm:text-5xl sm:leading-tight">
-            Por uma relação mais gentil: com você, com seu corpo e com a comida.
-          </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#4c311c]/85">
-            Um acompanhamento nutricional que une afeto, memórias e comportamento — sem dietas,
-            sem restrições e longe de contagem de calorias.
-          </p>
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <CTAButton href={waLink('Olá, Isabelle! Gostaria de marcar uma consulta.')}>
-              Marcar consulta
-            </CTAButton>
-            <CTAButton href={INSTAGRAM_URL} variant="secondary">
-              Ver no Instagram
-            </CTAButton>
-          </div>
-        </div>
+          <section className="px-5 pb-20 pt-14 sm:px-8 sm:pt-20">
+            <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-20">
+              <div>
+                <SectionEyebrow>Nutrição Comportamental · Online · Brasil &amp; Europa</SectionEyebrow>
+                <h1 className="mt-5 font-display text-3xl leading-tight text-[#4c311c] sm:text-5xl sm:leading-tight">
+                  Por uma relação mais gentil: com você, com seu corpo e com a comida.
+                </h1>
+                <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#4c311c]/85">
+                  Um acompanhamento nutricional que une afeto, memórias e comportamento — sem dietas,
+                  sem restrições e longe de contagem de calorias.
+                </p>
+                <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+                  <CTAButton href={waLink('Olá, Isabelle! Gostaria de marcar uma consulta.')}>
+                    Marcar consulta
+                  </CTAButton>
+                  <CTAButton href={INSTAGRAM_URL} variant="secondary">
+                    Ver no Instagram
+                  </CTAButton>
+                </div>
+              </div>
 
-        <div className="relative mx-auto mt-16 grid max-w-4xl gap-6 sm:grid-cols-3">
-          {TRUST_POINTS.map((point) => (
-            <div
-              key={point.title}
-              className="rounded-2xl border border-[#4c311c]/12 bg-[#eae8da] p-6 text-center shadow-[0_1px_0_rgba(76,49,28,0.06)]"
-            >
-              <point.icon className="mx-auto h-7 w-7 text-[#913c1f]" aria-hidden="true" />
-              <h3 className="mt-3 font-display text-base text-[#4c311c]">{point.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#4c311c]/75">{point.text}</p>
+              <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+                <div
+                  aria-hidden="true"
+                  className="absolute -left-6 -top-8 h-[92%] w-[92%]"
+                  style={{ backgroundColor: '#b2c44240', borderRadius: '46% 54% 62% 38% / 42% 40% 60% 58%' }}
+                />
+                <img
+                  src="/images/isabellelimao.jpeg"
+                  alt="Isabelle Ebener sorrindo"
+                  className="relative aspect-[4/5] w-full object-cover shadow-[0_28px_60px_-30px_rgba(76,49,28,0.45)]"
+                  style={{ borderRadius: '180px 180px 180px 24px' }}
+                />
+              </div>
             </div>
-          ))}
-        </div>
-      </section>
+
+            <div className="relative mx-auto mt-16 grid max-w-4xl gap-6 sm:grid-cols-3">
+              {TRUST_POINTS.map((point) => (
+                <div
+                  key={point.title}
+                  className="rounded-2xl border border-[#4c311c]/12 bg-[#eae8da] p-6 text-center shadow-[0_1px_0_rgba(76,49,28,0.06)]"
+                >
+                  <point.icon className="mx-auto h-7 w-7 text-[#913c1f]" aria-hidden="true" />
+                  <h3 className="mt-3 font-display text-base text-[#4c311c]">{point.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[#4c311c]/75">{point.text}</p>
+                </div>
+              ))}
+            </div>
+          </section>
 
       {/* SOBRE MIM */}
       <section id="sobre" className="px-5 py-20 sm:px-8">
@@ -328,13 +331,13 @@ function LandingPage() {
        <div className="mx-auto w-full max-w-xs">
        <div className="relative aspect-[4/5] w-full">
           <img
-            src="/images/WhatsApp_Image_2026-09-16_at_05_46_10__2_.jpeg"
+            src="/images/isabelletoranja.jpeg"
             alt="Isabelle Ebener sorrindo, segurando fatias de toranja"
             className="absolute inset-0 h-full w-full rounded-[2rem] border border-[#4c311c]/15 object-cover shadow-[0_8px_24px_rgba(76,49,28,0.15)]"
           />
           <div className="absolute -bottom-6 -right-6 h-32 w-32 overflow-hidden rounded-2xl border-4 border-[#eae8da] shadow-[0_8px_20px_rgba(76,49,28,0.2)] sm:h-36 sm:w-36">
             <img
-              src="/images/WhatsApp_Image_2026-09-16_at_05_46_10__3_.jpeg"
+              src="/images/isabellelimao.jpeg"
               alt="Isabelle Ebener sorrindo com um limão"
               className="h-full w-full object-cover"
             />
@@ -575,13 +578,14 @@ function LandingPage() {
           <div className="max-w-2xl">
             <SectionEyebrow>Mentorias em grupo</SectionEyebrow>
             <h2 className="mt-3 font-display text-2xl text-[#4c311c] sm:text-3xl">
-              Um processo compartilhado, no seu ritmo — sem dieta e sem julgamento.
-            </h2>
+            Um grupo fechado de 10 mulheres, rumo ao emagrecimento saudável
+          </h2>
             <p className="mt-4 leading-relaxed text-[#4c311c]/85">
-              Um formato complementar ao acompanhamento individual: aprendizagem coletiva, escuta
-              gentil, ferramentas práticas e o calor de quem caminha junto. Não substitui a consulta
-              1:1 nem o cuidado clínico personalizado.
-            </p>
+            Processo exclusivo que une a força e o acolhimento do grupo ao cuidado
+            individualizado que a sua rotina precisa — para emagrecer com saúde, sem
+            abrir mão do prazer de comer. Ao todo, são 6 encontros em grupo e 6
+            consultas individuais.
+          </p>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -615,10 +619,10 @@ function LandingPage() {
               <div>
                 <h3 className="font-display text-lg text-[#4c311c]">Como a gente se reúne</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#4c311c]/80">
-                  Quem busca dieta, contagem de calorias ou um plano clínico só seu encontra esse
-                  cuidado nos Programas individuais. A mentoria é para quem quer se reconectar com
-                  a comida em companhia — com ou sem acompanhamento 1:1 em paralelo.
-                </p>
+                Um processo desenhado para um grupo fechado de apenas 10 mulheres,
+                unindo a força e o acolhimento do grupo ao cuidado individualizado
+                que a sua rotina precisa.
+              </p> 
                 <p className="mt-4 font-display text-base italic text-[#4c311c]">
                   &ldquo;Nutrição além do prato, agora em círculo.&rdquo;
                 </p>
@@ -657,9 +661,11 @@ function LandingPage() {
 
           <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-dashed border-[#4c311c]/25 p-6 text-center">
             <p className="text-sm leading-relaxed text-[#4c311c]/75">
-              Mentoria em grupo não é substituto de consulta. Anamnese, exames, plano personalizado
-              e suporte clínico contínuo seguem nos Programas. Datas, duração e valores combinamos
-              juntas no WhatsApp.
+            Inclui consulta inicial completa com anamnese, guia de orientações
+            nutricionais, solicitação de exames, acesso ao aplicativo de
+            acompanhamento, ferramentas de mudança comportamental e suporte via
+            WhatsApp. Datas, duração e valores da turma combinamos juntas no
+            WhatsApp.
             </p>
           </div>
 
