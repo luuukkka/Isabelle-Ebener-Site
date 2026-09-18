@@ -131,36 +131,42 @@ const SERVICES: Array<{
   accent: string
   title: string
   text: string
+  image: string
 }> = [
   {
     icon: Pumpkin,
     accent: '#e48e37',
     title: 'Programa Trimestral',
     text: 'Acompanhamento contínuo de 3 meses, com retornos mensais de 1h e check-ins quinzenais online — para consolidar hábitos reais e sustentáveis.',
+    image: '/images/servicos/avulsas.jpg.jpg ',
   },
   {
     icon: Beet,
     accent: '#913c1f',
     title: 'Programa Semestral',
     text: 'O mesmo modelo de cuidado contínuo, estendido para 6 meses, pensado para resultados mais consolidados e duradouros.',
+    image: '/images/servicos/exames.jpg.jpg',
   },
   {
     icon: Mushroom,
     accent: '#b2c442',
     title: 'Consulta de Manutenção',
     text: 'Para quem já passou por acompanhamento e quer revisar estratégias, ajustar metas ou adaptar o plano a uma nova fase da vida.',
+    image: '/images/servicos/manutencao.jpg.jpg',
   },
   {
     icon: Pea,
     accent: '#351935',
     title: 'Avaliação e Solicitação de Exames',
     text: 'Acompanhamento focado em revisão de exames laboratoriais e ajustes no plano alimentar com base nos resultados.',
+    image: '/images/servicos/semestral.jpg.jpg',
   },
   {
     icon: Tomato,
     accent: '#4c311c',
     title: 'Pacote de Consultas Avulsas',
     text: 'Pacotes de 3 ou 5 consultas, com a flexibilidade de quem quer cuidado pontual, sem compromisso de programa longo.',
+    image: '/images/servicos/trimestral.jpg.jpg',
   },
 ]
 
@@ -511,19 +517,22 @@ function LandingPage() {
                 className="group overflow-hidden rounded-2xl border border-[#4c311c]/12 bg-[#eae8da]"
               >
                 <div
-                  className="relative flex h-44 items-center justify-center overflow-hidden"
-                  style={{ backgroundColor: `${service.accent}22` }}
-                >
-                  <div
-                    className="absolute inset-0 opacity-30"
-                    style={{ backgroundImage: "url('/images/pattern.svg')", backgroundSize: '200px' }}
-                    aria-hidden="true"
-                  />
-                  <service.icon
-                    className="relative h-16 w-16 transition-transform duration-500 ease-out group-hover:scale-110"
-                    style={{ color: service.accent }}
-                  />
-                </div>
+  className="relative flex h-44 items-center justify-center overflow-hidden"
+  style={{
+    backgroundImage: `url(${service.image})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}
+>
+  <div
+    className="absolute inset-0"
+    style={{ backgroundColor: service.accent, opacity: 0.45 }}
+    aria-hidden="true"
+  />
+  <service.icon
+    className="relative h-16 w-16 text-white transition-transform duration-500 ease-out group-hover:scale-110"
+  />
+</div>
                 <div className="p-6">
                   <h3 className="font-display text-lg text-[#4c311c]">{service.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-[#4c311c]/80">{service.text}</p>
