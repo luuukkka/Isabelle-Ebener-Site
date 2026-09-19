@@ -88,11 +88,11 @@ const DIFFERENTIALS = [
   },
   {
     icon: Ban,
-    text: 'Carrega culpa e frustração com a comida e quer fazer as pazes com o prato.',
+    text: 'Carrega culpa e frustração ao comer e quer fazer as pazes com a comida.',
   },
   {
     icon: Target,
-    text: 'Busca emagrecimento ou performance, mas quer um processo humanizado, sem milagres.',
+    text: 'Busca emagrecimento ou performance, mas quer um processo humanizado.',
   },
 ]
 
@@ -106,7 +106,7 @@ const TESTIMONIALS = [
     name: 'Felipe Fioravanti',
   },
   {
-    quote: 'Depois de anos entrando e saindo de dieta, finalmente parei de contar caloria e comecei a ouvir meu corpo de verdade. Hoje como com prazer e sem culpa.',
+    quote: 'Com a Isa, o acompanhamento virou leve e divertido — nunca chato. O cuidado e a didática dela me ajudaram muito no tratamento da DM1, e as metas que traçamos juntas mostram evolução real a cada passo',
     name: 'Marina Alves',
   },
 ]
