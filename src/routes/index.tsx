@@ -32,18 +32,18 @@ const EMAIL = 'ebenerisa1@gmail.com'
 const TRUST_POINTS = [
   {
     icon: Clock3,
-    title: 'Acompanhamento lado a lado',
+    title: 'Acompanhamento próximo',
     text: 'Programas de acompanhamento onde eu caminho lado a lado, com sessões semanais ou quinzenais para que você continue engajada durante todo o processo.',
   },
   {
     icon: Globe2,
-    title: 'Brasil e Europa',
-    text: 'Atendimento 100% online, com flexibilidade de horários e pensados para os dois fusos.',
+    title: 'Encontros online',
+    text: 'Atendimento 100% online, com flexibilidade de horários em português, inglês ou alemão.',
   },
   {
     icon: HeartHandshake,
     title: 'Escuta sem julgamento',
-    text: 'Um espaço acolhedor, gentil e livre de culpa para falar sobre a sua relação com você, com seu corpo e com comida.',
+    text: 'Um espaço acolhedor, gentil e livre para falar sobre a sua relação com você, com seu corpo e com comida.',
   },
 ]
 
@@ -51,19 +51,19 @@ const PILLARS = [
   {
     icon: Pumpkin,
     title: 'Olhar Integral',
-    text: 'Avalio você de forma sistêmica, trazendo para a consulta fatores como a qualidade do sono, níveis de estresse, autocuidado e gatilhos emocionais. Investigamos o que dispara suas escolhas, reconhecendo que a comida é apenas uma parte da sua história, ',
+    text: 'Avalio você de forma sistêmica, trazendo para a consulta fatores como a qualidade do sono, níveis de estresse, autocuidado e gatilhos emocionais.  ',
     accent: '#b2c442',
   },
   {
     icon: Carrot,
     title: 'Autonomia Alimentar',
-    text: 'O objetivo é devolver o controle do seu corpo a você, eliminando a dependência de listas de alimentos permitidos ou proibidos. Ao longo do processo, você sai com ferramentas práticas e organização para fazer escolhas conscientes independente de onde você esteja.',
+    text: 'Ao longo do processo, você sai com ferramentas práticas e organização para fazer escolhas conscientes independentemente de onde você esteja.',
     accent: '#e48e37',
   },
   {
     icon: Tomato,
     title: 'Afeto e Presença',
-    text: 'Resgatamos o prazer genuíno de comer e a atenção plena à mesa, desconstruindo o terrorismo nutricional e os julgamentos sobre os alimentos. Comida também é celebração, afeto e cultura. Nenhum prato na sua mesa deve carregar medo ou ansiedade.',
+    text: 'Resgatamos o prazer genuíno de comer e a atenção plena à mesa, desconstruindo o terrorismo nutricional e os julgamentos sobre os alimentos.',
     accent: '#913c1f',
   },
 ]
@@ -71,23 +71,23 @@ const PILLARS = [
 const DIFFERENTIALS = [
   {
     icon: Clock3,
-    text: 'Consulta longa, com escuta real — nada de consulta corrida',
+    text: 'Cansou das dietas restritivas e quer aprender a comer de forma saudável com constância ',
   },
   {
     icon: HeartHandshake,
-    text: 'Análise emocional e comportamental, não só números e balança',
+    text: 'Sente-se perdida entre o que comer e como se organizar na correria do dia a dia.',
   },
   {
     icon: ClipboardList,
-    text: 'Guia e menu personalizado, com orientações práticas para o dia a dia',
+    text: 'Vive no ciclo do "começo na segunda e desisto na quarta',
   },
   {
     icon: MessageSquareHeart,
-    text: 'Suporte contínuo via WhatsApp entre as sessões',
+    text: 'Pacientes vegetarianos e veganos ',
   },
   {
     icon: Ban,
-    text: 'Sem dietas restritivas, sem contagem de calorias, sem proibições',
+    text: 'Carrega culpa e frustração com a comida e quer fazer as pazes com o prato.',
   },
 ]
 
@@ -417,7 +417,12 @@ function LandingPage() {
               </div>
             ))}
           </div>
+          
+          <h3 className="mt-12 text-center font-display text-xl text-[#4c311c]">
+            Meu atendimento é para você que:
+          </h3>
 
+          <div className="mt-12 grid gap-4 sm:grid-cols-2">
           <div className="mt-12 grid gap-4 sm:grid-cols-2">
             {DIFFERENTIALS.map((item) => (
               <div key={item.text} className="flex items-start gap-3 rounded-xl bg-[#eae8da] p-4">
