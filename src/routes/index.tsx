@@ -417,12 +417,11 @@ function LandingPage() {
               </div>
             ))}
           </div>
-          
+
           <h3 className="mt-12 text-center font-display text-xl text-[#4c311c]">
             Meu atendimento é para você que:
           </h3>
 
-          <div className="mt-12 grid gap-4 sm:grid-cols-2">
           <div className="mt-12 grid gap-4 sm:grid-cols-2">
             {DIFFERENTIALS.map((item) => (
               <div key={item.text} className="flex items-start gap-3 rounded-xl bg-[#eae8da] p-4">
