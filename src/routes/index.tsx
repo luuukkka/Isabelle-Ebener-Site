@@ -50,20 +50,20 @@ const TRUST_POINTS = [
 const PILLARS = [
   {
     icon: Pumpkin,
-    title: 'Abordagem Holística',
-    text: 'Sono, estresse, relacionamentos, autocuidado e gatilhos emocionais entram na conversa — porque comer é só uma parte da história.',
+    title: 'Olhar Integral',
+    text: 'Avalio você de forma sistêmica, trazendo para a consulta fatores como a qualidade do sono, níveis de estresse, autocuidado e gatilhos emocionais. Investigamos o que dispara suas escolhas, reconhecendo que a comida é apenas uma parte da sua história, ',
     accent: '#b2c442',
   },
   {
     icon: Carrot,
-    title: 'Autonomia e Organização',
-    text: 'Você sai com ferramentas para decidir por si, sem depender de dietas restritivas. O objetivo é liberdade, não regras.',
+    title: 'Autonomia Alimentar',
+    text: 'O objetivo é devolver o controle do seu corpo a você, eliminando a dependência de listas de alimentos permitidos ou proibidos. Ao longo do processo, você sai com ferramentas práticas e organização para fazer escolhas conscientes independente de onde você esteja.',
     accent: '#e48e37',
   },
   {
     icon: Tomato,
-    title: 'Amor à Mesa',
-    text: 'Comida também é memória, afeto e presença. Nenhum prato aqui precisa carregar medo ou culpa.',
+    title: 'Afeto e Presença',
+    text: 'Resgatamos o prazer genuíno de comer e a atenção plena à mesa, desconstruindo o terrorismo nutricional e os julgamentos sobre os alimentos. Comida também é celebração, afeto e cultura. Nenhum prato na sua mesa deve carregar medo ou ansiedade.',
     accent: '#913c1f',
   },
 ]
@@ -133,42 +133,42 @@ const SERVICES: Array<{
   text: string
   image: string
 }> = [
-  {
-    icon: Pumpkin,
-    accent: '#e48e37',
-    title: 'Programa Trimestral',
-    text: 'Acompanhamento contínuo de 3 meses, com retornos mensais de 1h e check-ins quinzenais online — para consolidar hábitos reais e sustentáveis.',
-    image: '/images/servicos/avulsas.jpg.jpg ',
-  },
-  {
-    icon: Beet,
-    accent: '#913c1f',
-    title: 'Programa Semestral',
-    text: 'O mesmo modelo de cuidado contínuo, estendido para 6 meses, pensado para resultados mais consolidados e duradouros.',
-    image: '/images/servicos/exames.jpg.jpg',
-  },
-  {
-    icon: Mushroom,
-    accent: '#b2c442',
-    title: 'Consulta de Manutenção',
-    text: 'Para quem já passou por acompanhamento e quer revisar estratégias, ajustar metas ou adaptar o plano a uma nova fase da vida.',
-    image: '/images/servicos/manutencao.jpg.jpg',
-  },
-  {
-    icon: Pea,
-    accent: '#351935',
-    title: 'Avaliação e Solicitação de Exames',
-    text: 'Acompanhamento focado em revisão de exames laboratoriais e ajustes no plano alimentar com base nos resultados.',
-    image: '/images/servicos/semestral.jpg.jpg',
-  },
-  {
-    icon: Tomato,
-    accent: '#4c311c',
-    title: 'Pacote de Consultas Avulsas',
-    text: 'Pacotes de 3 ou 5 consultas, com a flexibilidade de quem quer cuidado pontual, sem compromisso de programa longo.',
-    image: '/images/servicos/trimestral.jpg.jpg',
-  },
-]
+    {
+      icon: Pumpkin,
+      accent: '#e48e37',
+      title: 'Programa Trimestral',
+      text: 'Acompanhamento contínuo de 3 meses, com retornos mensais de 1h e check-ins quinzenais online — para consolidar hábitos reais e sustentáveis.',
+      image: '/images/servicos/avulsas.jpg.jpg ',
+    },
+    {
+      icon: Beet,
+      accent: '#913c1f',
+      title: 'Programa Semestral',
+      text: 'O mesmo modelo de cuidado contínuo, estendido para 6 meses, pensado para resultados mais consolidados e duradouros.',
+      image: '/images/servicos/exames.jpg.jpg',
+    },
+    {
+      icon: Mushroom,
+      accent: '#b2c442',
+      title: 'Consulta de Manutenção',
+      text: 'Para quem já passou por acompanhamento e quer revisar estratégias, ajustar metas ou adaptar o plano a uma nova fase da vida.',
+      image: '/images/servicos/manutencao.jpg.jpg',
+    },
+    {
+      icon: Pea,
+      accent: '#351935',
+      title: 'Avaliação e Solicitação de Exames',
+      text: 'Acompanhamento focado em revisão de exames laboratoriais e ajustes no plano alimentar com base nos resultados.',
+      image: '/images/servicos/semestral.jpg.jpg',
+    },
+    {
+      icon: Tomato,
+      accent: '#4c311c',
+      title: 'Pacote de Consultas Avulsas',
+      text: 'Pacotes de 3 ou 5 consultas, com a flexibilidade de quem quer cuidado pontual, sem compromisso de programa longo.',
+      image: '/images/servicos/trimestral.jpg.jpg',
+    },
+  ]
 
 const MENTORIA_HIGHLIGHTS = [
   {
@@ -275,75 +275,75 @@ function LandingPage() {
       <SiteHeader />
 
       {/* CAPA */}
-          <section className="px-5 pb-20 pt-14 sm:px-8 sm:pt-20">
-            <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-20">
-              <div>
-                <SectionEyebrow>Nutrição Comportamental · Online · Brasil &amp; Europa</SectionEyebrow>
-                <h1 className="mt-5 font-display text-3xl leading-tight text-[#4c311c] sm:text-5xl sm:leading-tight">
-                  Por uma relação mais gentil: com você, com seu corpo e com a comida.
-                </h1>
-                <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#4c311c]/85">
-                  Um acompanhamento nutricional que une afeto, memórias e comportamento — sem dietas,
-                  sem restrições e longe de contagem de calorias.
-                </p>
-                <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-                  <CTAButton href={waLink('Olá, Isabelle! Gostaria de marcar uma consulta.')}>
-                    Marcar consulta
-                  </CTAButton>
-                  <CTAButton href={INSTAGRAM_URL} variant="secondary">
-                    Ver no Instagram
-                  </CTAButton>
-                </div>
-              </div>
-
-              <div className="relative mx-auto w-full max-w-md lg:max-w-none">
-                <div
-                  aria-hidden="true"
-                  className="absolute -left-6 -top-8 h-[92%] w-[92%]"
-                  style={{ backgroundColor: '#b2c44240', borderRadius: '46% 54% 62% 38% / 42% 40% 60% 58%' }}
-                />
-                <img
-                  src="/images/isabellelimao.jpeg"
-                  alt="Isabelle Ebener sorrindo"
-                  className="relative aspect-[4/5] w-full object-cover shadow-[0_28px_60px_-30px_rgba(76,49,28,0.45)]"
-                  style={{ borderRadius: '180px 180px 180px 24px' }}
-                />
-              </div>
+      <section className="px-5 pb-20 pt-14 sm:px-8 sm:pt-20">
+        <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:gap-20">
+          <div>
+            <SectionEyebrow>Nutrição Comportamental · Online · Brasil &amp; Europa</SectionEyebrow>
+            <h1 className="mt-5 font-display text-3xl leading-tight text-[#4c311c] sm:text-5xl sm:leading-tight">
+              Por uma relação mais gentil: com você, com seu corpo e com a comida.
+            </h1>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#4c311c]/85">
+              Um acompanhamento nutricional que une afeto, memórias e comportamento — sem dietas,
+              sem restrições e longe de contagem de calorias.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <CTAButton href={waLink('Olá, Isabelle! Gostaria de marcar uma consulta.')}>
+                Marcar consulta
+              </CTAButton>
+              <CTAButton href={INSTAGRAM_URL} variant="secondary">
+                Ver no Instagram
+              </CTAButton>
             </div>
+          </div>
 
-            <div className="relative mx-auto mt-16 grid max-w-4xl gap-6 sm:grid-cols-3">
-              {TRUST_POINTS.map((point) => (
-                <div
-                  key={point.title}
-                  className="rounded-2xl border border-[#4c311c]/12 bg-[#eae8da] p-6 text-center shadow-[0_1px_0_rgba(76,49,28,0.06)]"
-                >
-                  <point.icon className="mx-auto h-7 w-7 text-[#913c1f]" aria-hidden="true" />
-                  <h3 className="mt-3 font-display text-base text-[#4c311c]">{point.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-[#4c311c]/75">{point.text}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-      {/* SOBRE MIM */}
-      <section id="sobre" className="px-5 py-20 sm:px-8">
-       <div className="mx-auto grid max-w-5xl gap-10 sm:grid-cols-[minmax(0,280px)_1fr] sm:items-center">
-       <div className="mx-auto w-full max-w-xs">
-       <div className="relative aspect-[4/5] w-full">
-          <img
-            src="/images/isabelletoranja.jpeg"
-            alt="Isabelle Ebener sorrindo, segurando fatias de toranja"
-            className="absolute inset-0 h-full w-full rounded-[2rem] border border-[#4c311c]/15 object-cover shadow-[0_8px_24px_rgba(76,49,28,0.15)]"
-          />
-          <div className="absolute -bottom-6 -right-6 h-32 w-32 overflow-hidden rounded-2xl border-4 border-[#eae8da] shadow-[0_8px_20px_rgba(76,49,28,0.2)] sm:h-36 sm:w-36">
+          <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+            <div
+              aria-hidden="true"
+              className="absolute -left-6 -top-8 h-[92%] w-[92%]"
+              style={{ backgroundColor: '#b2c44240', borderRadius: '46% 54% 62% 38% / 42% 40% 60% 58%' }}
+            />
             <img
               src="/images/isabellelimao.jpeg"
-              alt="Isabelle Ebener sorrindo com um limão"
-              className="h-full w-full object-cover"
+              alt="Isabelle Ebener sorrindo"
+              className="relative aspect-[4/5] w-full object-cover shadow-[0_28px_60px_-30px_rgba(76,49,28,0.45)]"
+              style={{ borderRadius: '180px 180px 180px 24px' }}
             />
           </div>
         </div>
-      </div>
+
+        <div className="relative mx-auto mt-16 grid max-w-4xl gap-6 sm:grid-cols-3">
+          {TRUST_POINTS.map((point) => (
+            <div
+              key={point.title}
+              className="rounded-2xl border border-[#4c311c]/12 bg-[#eae8da] p-6 text-center shadow-[0_1px_0_rgba(76,49,28,0.06)]"
+            >
+              <point.icon className="mx-auto h-7 w-7 text-[#913c1f]" aria-hidden="true" />
+              <h3 className="mt-3 font-display text-base text-[#4c311c]">{point.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-[#4c311c]/75">{point.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* SOBRE MIM */}
+      <section id="sobre" className="px-5 py-20 sm:px-8">
+        <div className="mx-auto grid max-w-5xl gap-10 sm:grid-cols-[minmax(0,280px)_1fr] sm:items-center">
+          <div className="mx-auto w-full max-w-xs">
+            <div className="relative aspect-[4/5] w-full">
+              <img
+                src="/images/isabelletoranja.jpeg"
+                alt="Isabelle Ebener sorrindo, segurando fatias de toranja"
+                className="absolute inset-0 h-full w-full rounded-[2rem] border border-[#4c311c]/15 object-cover shadow-[0_8px_24px_rgba(76,49,28,0.15)]"
+              />
+              <div className="absolute -bottom-6 -right-6 h-32 w-32 overflow-hidden rounded-2xl border-4 border-[#eae8da] shadow-[0_8px_20px_rgba(76,49,28,0.2)] sm:h-36 sm:w-36">
+                <img
+                  src="/images/isabellelimao.jpeg"
+                  alt="Isabelle Ebener sorrindo com um limão"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
           <div>
             <SectionEyebrow>Sobre mim</SectionEyebrow>
             <h2 className="mt-3 font-display text-2xl text-[#4c311c] sm:text-3xl">
@@ -392,8 +392,11 @@ function LandingPage() {
               Comportamental, sem dietas, sem contagem de calorias.
             </h2>
             <p className="mt-4 leading-relaxed text-[#4c311c]/85">
-              Aqui a conversa não é sobre o corpo estético padrão — é sobre saúde, comportamento e
-              a relação que você tem com a comida no seu dia a dia real.
+              A alimentação é uma expressão viva de quem somos, ela carrega nossas histórias, 
+              emoções, cultura, hábitos e, acima de tudo, o prazer que encontramos em comer. 
+              Atuo com uma abordagem que não prescreve dietas. Meu objetivo é guiar você em uma jornada de reconexão 
+              com os sinais do seu próprio corpo, promovendo uma relação consciente, leve e livre de julgamentos com a comida. 
+              Vamos juntas resgatar o equilíbrio e a paz com o seu prato?
             </p>
           </div>
 
@@ -455,11 +458,11 @@ function LandingPage() {
               <figure
                 key={t.quote}
                 className="rounded-2xl border border-[#4c311c]/12 bg-[#eae8da] p-6" >
-                    <Quote className="h-5 w-5 text-[#913c1f]/50" aria-hidden="true" />
-                      <blockquote className="mt-2.5 text-sm leading-relaxed text-[#4c311c]/85">
-                        &ldquo;{t.quote}&rdquo;
-                      </blockquote>
-                    <figcaption className="mt-4 text-xs uppercase tracking-wide text-[#913c1f]">
+                <Quote className="h-5 w-5 text-[#913c1f]/50" aria-hidden="true" />
+                <blockquote className="mt-2.5 text-sm leading-relaxed text-[#4c311c]/85">
+                  &ldquo;{t.quote}&rdquo;
+                </blockquote>
+                <figcaption className="mt-4 text-xs uppercase tracking-wide text-[#913c1f]">
                   {t.name}
                 </figcaption>
               </figure>
@@ -520,22 +523,22 @@ function LandingPage() {
                 className="group overflow-hidden rounded-2xl border border-[#4c311c]/12 bg-[#eae8da]"
               >
                 <div
-  className="relative flex h-44 items-center justify-center overflow-hidden"
-  style={{
-    backgroundImage: `url(${service.image})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
->
-  <div
-    className="absolute inset-0"
-    style={{ backgroundColor: service.accent, opacity: 0.45 }}
-    aria-hidden="true"
-  />
-  <service.icon
-    className="relative h-16 w-16 text-white transition-transform duration-500 ease-out group-hover:scale-110"
-  />
-</div>
+                  className="relative flex h-44 items-center justify-center overflow-hidden"
+                  style={{
+                    backgroundImage: `url(${service.image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                >
+                  <div
+                    className="absolute inset-0"
+                    style={{ backgroundColor: service.accent, opacity: 0.45 }}
+                    aria-hidden="true"
+                  />
+                  <service.icon
+                    className="relative h-16 w-16 text-white transition-transform duration-500 ease-out group-hover:scale-110"
+                  />
+                </div>
                 <div className="p-6">
                   <h3 className="font-display text-lg text-[#4c311c]">{service.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-[#4c311c]/80">{service.text}</p>
@@ -578,14 +581,14 @@ function LandingPage() {
           <div className="max-w-2xl">
             <SectionEyebrow>Mentorias em grupo</SectionEyebrow>
             <h2 className="mt-3 font-display text-2xl text-[#4c311c] sm:text-3xl">
-            Um grupo fechado de 10 mulheres, rumo ao emagrecimento saudável
-          </h2>
+              Um grupo fechado de 10 mulheres, rumo ao emagrecimento saudável
+            </h2>
             <p className="mt-4 leading-relaxed text-[#4c311c]/85">
-            Processo exclusivo que une a força e o acolhimento do grupo ao cuidado
-            individualizado que a sua rotina precisa — para emagrecer com saúde, sem
-            abrir mão do prazer de comer. Ao todo, são 6 encontros em grupo e 6
-            consultas individuais.
-          </p>
+              Processo exclusivo que une a força e o acolhimento do grupo ao cuidado
+              individualizado que a sua rotina precisa — para emagrecer com saúde, sem
+              abrir mão do prazer de comer. Ao todo, são 6 encontros em grupo e 6
+              consultas individuais.
+            </p>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -619,10 +622,10 @@ function LandingPage() {
               <div>
                 <h3 className="font-display text-lg text-[#4c311c]">Como a gente se reúne</h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#4c311c]/80">
-                Um processo desenhado para um grupo fechado de apenas 10 mulheres,
-                unindo a força e o acolhimento do grupo ao cuidado individualizado
-                que a sua rotina precisa.
-              </p> 
+                  Um processo desenhado para um grupo fechado de apenas 10 mulheres,
+                  unindo a força e o acolhimento do grupo ao cuidado individualizado
+                  que a sua rotina precisa.
+                </p>
                 <p className="mt-4 font-display text-base italic text-[#4c311c]">
                   &ldquo;Nutrição além do prato, agora em círculo.&rdquo;
                 </p>
@@ -661,11 +664,11 @@ function LandingPage() {
 
           <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-dashed border-[#4c311c]/25 p-6 text-center">
             <p className="text-sm leading-relaxed text-[#4c311c]/75">
-            Inclui consulta inicial completa com anamnese, guia de orientações
-            nutricionais, solicitação de exames, acesso ao aplicativo de
-            acompanhamento, ferramentas de mudança comportamental e suporte via
-            WhatsApp. Datas, duração e valores da turma combinamos juntas no
-            WhatsApp.
+              Inclui consulta inicial completa com anamnese, guia de orientações
+              nutricionais, solicitação de exames, acesso ao aplicativo de
+              acompanhamento, ferramentas de mudança comportamental e suporte via
+              WhatsApp. Datas, duração e valores da turma combinamos juntas no
+              WhatsApp.
             </p>
           </div>
 
