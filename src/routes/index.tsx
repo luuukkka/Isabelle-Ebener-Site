@@ -107,7 +107,7 @@ const TESTIMONIALS = [
   },
   {
     quote: 'Com a Isa, o acompanhamento virou leve e divertido — nunca chato. O cuidado e a didática dela me ajudaram muito no tratamento da DM1, e as metas que traçamos juntas mostram evolução real a cada passo',
-    name: 'Marina Alves',
+    name: 'Maíra Gabriely',
   },
 ]
 
