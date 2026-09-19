@@ -15,6 +15,7 @@ import {
   MessageSquareHeart,
   Ban,
   Quote,
+  Target,
 } from 'lucide-react'
 import { SiteHeader, waLink } from '@/components/site-header'
 import { FaqAccordion } from '@/components/faq-accordion'
@@ -33,7 +34,7 @@ const TRUST_POINTS = [
   {
     icon: Clock3,
     title: 'Acompanhamento próximo',
-    text: 'Programas de acompanhamento onde eu caminho lado a lado, com sessões semanais ou quinzenais para que você continue engajada durante todo o processo.',
+    text: 'Sessões semanais ou quinzenais, com proximidade real durante toda a jornada — você nunca caminha sozinha entre um encontro e outro.',
   },
   {
     icon: Globe2,
@@ -71,7 +72,7 @@ const PILLARS = [
 const DIFFERENTIALS = [
   {
     icon: Clock3,
-    text: 'Cansou das dietas restritivas e quer aprender a comer de forma saudável com constância ',
+    text: 'Cansou das dietas restritivas e quer aprender a comer de forma saudável com constância.',
   },
   {
     icon: HeartHandshake,
@@ -79,15 +80,19 @@ const DIFFERENTIALS = [
   },
   {
     icon: ClipboardList,
-    text: 'Vive no ciclo do "começo na segunda e desisto na quarta',
+    text: 'Vive no ciclo do "começo na segunda e desisto na quarta".',
   },
   {
     icon: MessageSquareHeart,
-    text: 'Pacientes vegetarianos e veganos ',
+    text: 'Pacientes vegetarianos e veganos.',
   },
   {
     icon: Ban,
     text: 'Carrega culpa e frustração com a comida e quer fazer as pazes com o prato.',
+  },
+  {
+    icon: Target,
+    text: 'Busca emagrecimento ou performance, mas quer um processo humanizado, sem milagres.',
   },
 ]
 
